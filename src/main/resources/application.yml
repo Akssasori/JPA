@@ -1,0 +1,13 @@
+server:
+  port: 8787
+
+spring:
+  datasource:
+    driveClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/jpa
+    username: root
+    password: coti
+  jpa:
+    hibernate.ddl-auto: create-drop
+    generate-ddl: true
+    show-sql: true
