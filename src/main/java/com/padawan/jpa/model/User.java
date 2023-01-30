@@ -12,10 +12,12 @@ public class User {
 
     @Id
     private Long id;
-    @Column(name = "email_user", insertable = false)
+    @Column(name = "email_user")
     private String email;
-    @Column(columnDefinition = "varchar(50) default 'John Snow'")
+//    @Column(columnDefinition = "varchar(50) default 'John Snow'")
+    @Column(columnDefinition = "varchar(50)")
     private String name;
+    @Column(length = 11)
     private String cpf;
     private LocalDate createUser;
     private Float salary;
